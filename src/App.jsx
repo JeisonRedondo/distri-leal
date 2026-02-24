@@ -1,29 +1,13 @@
+import FeaturedProducts from "./layouts/FeaturedProducts/FeaturedProducts"
+import Header from "./layouts/Header/Header"
 import './App.css'
 
 function App() {
   return (
     <>
-      <nav>
-        <figure>logo</figure>
-        <section>searched input</section>
-        <ul>Options</ul>
-      </nav>
+      <Header />
       <main>
-        <h2>Products Off</h2>
-        <section>
-          <article>
-            Stelar Products
-          </article>
-          <article>
-            <article>
-              <article>
-                Stelar Products
-              </article>
-              Stelar Products
-            </article>
-            Stelar Products
-          </article>
-        </section>
+        <FeaturedProducts />
         <h2>Categories</h2>
         <section>
           <h2>Categorie n#</h2>
