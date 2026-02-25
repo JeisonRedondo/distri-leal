@@ -1,5 +1,6 @@
 import CategoriesSection from "./layouts/CategoriesSection/CategoriesSection"
 import FeaturedProducts from "./layouts/FeaturedProducts/FeaturedProducts"
+import Footer from "./layouts/Footer/Footer"
 import Header from "./layouts/Header/Header"
 import './App.css'
 
@@ -11,9 +12,7 @@ function App() {
         <FeaturedProducts />
         <CategoriesSection />
       </main>
-      <footer>
-        This is the footer
-      </footer>
+      <Footer />
     </>
   )
 }

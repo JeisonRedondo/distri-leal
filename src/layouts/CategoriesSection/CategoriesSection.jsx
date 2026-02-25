@@ -44,7 +44,6 @@ function CategoriesSection() {
       </section>
     </>
   )
-
 }
 
 export default CategoriesSection;
