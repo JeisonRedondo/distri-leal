@@ -1,18 +1,19 @@
+import "./FeaturedProducts.css"
 function FeaturedProducts() {
   return (
     <>
       <h2>Products Off</h2>
-      <section>
+      <section className="FeaturedProducts_section">
         <article>
           Stelar Products
         </article>
         <article>
-          <article>
-            <article>
-              Stelar Products
-            </article>
-            Stelar Products
-          </article>
+          Stelar Products
+        </article>
+        <article>
+          Stelar Products
+        </article>
+        <article>
           Stelar Products
         </article>
       </section>

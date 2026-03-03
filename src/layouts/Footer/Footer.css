@@ -1,0 +1,9 @@
+.Footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100vw;
+  position:fixed;
+  bottom: 0;
+}

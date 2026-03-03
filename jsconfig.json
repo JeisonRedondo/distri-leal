@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "checkJs": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "allowImportingTsExtensions": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

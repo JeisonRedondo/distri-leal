@@ -1,41 +1,88 @@
+import "./CategoriesSection.css"
 function CategoriesSection() {
   return (
     <>
       <h2>Categories</h2>
-      <section>
-        <h2>Categorie n#</h2>
+      <section className="Categories_Section">
         <div>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
+          <h2>Categorie n#</h2>
           <article>
             <p>image</p>
             <h3>eslogan</h3>
           </article>
         </div>
-        <h2>Categorie n#</h2>
         <div>
+          <h2>Categorie n#</h2>
           <article>
             <p>image</p>
             <h3>eslogan</h3>
           </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
           <article>
             <p>image</p>
             <h3>eslogan</h3>
           </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
           <article>
             <p>image</p>
             <h3>eslogan</h3>
           </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
           <article>
             <p>image</p>
             <h3>eslogan</h3>

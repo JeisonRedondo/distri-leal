@@ -1,17 +1,21 @@
+import "./Header.css"
+
 function Header() {
   return (
-    <>
-      <nav>
-        <figure>Logo</figure>
-        <section>Search Input</section>
+    <header className="header-container">
+      <nav className="header-nav">
+        <figure>Logos</figure>
       </nav>
-      <ul>
+      <div>
+        <section>Search Input</section>
+      </div>
+      <ul className="header_options-list">
         <li>Options</li>
         <li>Options</li>
         <li>Options</li>
         <li>Options</li>
       </ul>
-    </>
+    </header>
   )
 }
 

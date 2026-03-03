@@ -1,0 +1,16 @@
+.header-container {
+  margin: 8px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+
+.header_options-list {
+  list-style: none;  
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
