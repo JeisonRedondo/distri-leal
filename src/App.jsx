@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import './styles/globals.css';
 import CategoriesSection from "./layouts/CategoriesSection/CategoriesSection"
 import FeaturedProducts from "./layouts/FeaturedProducts/FeaturedProducts"
 import Header from "./layouts/Header/Header"

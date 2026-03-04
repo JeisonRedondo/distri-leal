@@ -1,0 +1,28 @@
+
+:root {
+  /* Brand */
+  --color-primary: #2563eb;     /* azul catálogo */
+  --color-secondary: #1d4ed8;   /* azul más profundo */
+  --color-accent: #f97316;      /* naranja para promos */
+
+  /* Backgrounds */
+  --color-bg: #f1f5ff;          /* azul claro de fondo */
+  --color-surface: #ffffff;     /* cards / bloques */
+  --color-border: #e0e7ff;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}

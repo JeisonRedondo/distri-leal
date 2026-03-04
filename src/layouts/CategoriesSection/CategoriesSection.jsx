@@ -3,7 +3,7 @@ function CategoriesSection() {
   return (
     <>
       <h2>Categories</h2>
-      <section className="Categories_Section">
+      <section className="flex-row Categories_Section">
         <div>
           <h2>Categorie n#</h2>
           <article>

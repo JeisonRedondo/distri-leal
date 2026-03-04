@@ -3,7 +3,7 @@ function FeaturedProducts() {
   return (
     <>
       <h2>Products Off</h2>
-      <section className="FeaturedProducts_section">
+      <section className="flex-row FeaturedProducts_section">
         <article>
           Stelar Products
         </article>
