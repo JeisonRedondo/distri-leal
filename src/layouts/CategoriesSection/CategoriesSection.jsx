@@ -1,94 +1,45 @@
 import "./CategoriesSection.css"
+import { products } from "../../data/products.js";
 function CategoriesSection() {
+
+  const productsByCategories = products.reduce((categories, item) => {
+
+    if (!(item.categoria in categories)) {
+      categories[item.categoria] = []
+    }
+    categories[item.categoria].push(item)
+    return categories
+
+  }, {});
+
   return (
+
     <>
-      <h2>Categories</h2>
-      <section className="flex-row Categories_Section">
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-        <div>
-          <h2>Categorie n#</h2>
-          <article>
-            <p>image</p>
-            <h3>eslogan</h3>
-          </article>
-        </div>
-      </section>
+      {
+        Object.keys(productsByCategories).map(categoria => {
+          const productos = productsByCategories[categoria];
+
+          return (
+            <>
+              <h2> {categoria}</h2>
+              <div key={categoria} className="flex-row-wrap Categories_Section" >
+                {
+                  productos.map(item => (
+                    <div >
+                      <article>
+                        <img src={item.imagen} alt={item.nombre} />
+                        <p>{item.nombre}</p>
+                      </article>
+                    </div>
+                  ))
+                }
+              </div>
+            </>
+          )
+
+        })
+
+      }
     </>
   )
 }

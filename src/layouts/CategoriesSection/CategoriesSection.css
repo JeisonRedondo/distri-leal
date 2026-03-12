@@ -1,3 +1,8 @@
 .Categories_Section {
   flex-wrap: wrap;
 }
+
+.Categories_Section img{
+  width: 150px;
+  height: 150px;
+}

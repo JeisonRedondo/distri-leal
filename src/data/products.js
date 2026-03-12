@@ -1,0 +1,63 @@
+export const products = [
+  { id: 1, nombre: "Papas Deli Campo", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Papas+Deli" },
+  { id: 2, nombre: "Papas Onduladas", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Papas+Onduladas" },
+  { id: 3, nombre: "Papas Gourmet", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Papas+Gourmet" },
+  { id: 4, nombre: "Tocinetas Deli Campo", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Tocinetas" },
+  { id: 5, nombre: "Papas Fosforo", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Papas+Fosforo" },
+  { id: 6, nombre: "Chicharron Chirros", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Chicharron" },
+  { id: 7, nombre: "Papas Favoritas de Kai", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Papas+Kai" },
+  { id: 8, nombre: "Rosquillas Giganteñas", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Rosquillas" },
+  { id: 9, nombre: "Rosquillas Chirros", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Rosquillas+Chirros" },
+  { id: 10, nombre: "Rosquillas Yuquillas", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Yuquillas" },
+  { id: 11, nombre: "Besitos", categoria: "snacks", imagen: "https://placehold.co/300x300/e8f5e9/2e7d32?text=Besitos" },
+
+  { id: 12, nombre: "Gelatina Fruit!", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Gelatina+Fruit" },
+  { id: 13, nombre: "Gelatinas Cups!", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Cups" },
+  { id: 14, nombre: "Gelatina de Frutas", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Gelatina+Frutas" },
+  { id: 15, nombre: "Gomas de Frutas", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Gomas" },
+  { id: 16, nombre: "Gummy Ball Soccer", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Gummy+Soccer" },
+  { id: 17, nombre: "Gomitas con Centro Liquido", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Gomitas+Liquido" },
+  { id: 18, nombre: "Gomas Moritas", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Moritas" },
+  { id: 19, nombre: "Tarro de Moritas", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Tarro+Moritas" },
+  { id: 20, nombre: "Chocolate Star", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Chocolate+Star" },
+  { id: 21, nombre: "Candy Ranch", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Candy+Ranch" },
+  { id: 22, nombre: "Frunas Zombie", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Frunas+Zombie" },
+  { id: 23, nombre: "Chupi Wom", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Chupi+Wom" },
+  { id: 24, nombre: "Dulces Surtidos", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Dulces+Surtidos" },
+  { id: 25, nombre: "Masmelos", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Masmelos" },
+  { id: 26, nombre: "Ojitos Rellenos", categoria: "dulces", imagen: "https://placehold.co/300x300/fce4ec/880e4f?text=Ojitos" },
+
+  { id: 27, nombre: "Bocadillo Veleño", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Bocadillo+Veleno" },
+  { id: 28, nombre: "Bocadillo Caleños", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Bocadillo+Caleños" },
+  { id: 29, nombre: "Bocadillo La Ricaurte", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Bocadillo+Ricaurte" },
+  { id: 30, nombre: "Lonja de Bocadillo", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Lonja+Bocadillo" },
+  { id: 31, nombre: "Longa de Manjar", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Longa+Manjar" },
+  { id: 32, nombre: "Caramelo de Leche", categoria: "tradicional", imagen: "https://placehold.co/300x300/fff3e0/e65100?text=Caramelo+Leche" },
+
+  { id: 33, nombre: "Galletas", categoria: "panaderia", imagen: "https://placehold.co/300x300/fff8e1/f9a825?text=Galletas" },
+  { id: 34, nombre: "Ponque Arrivo", categoria: "panaderia", imagen: "https://placehold.co/300x300/fff8e1/f9a825?text=Ponque+Arrivo" },
+
+  { id: 35, nombre: "Leche Algarra", categoria: "lacteos", imagen: "https://placehold.co/300x300/e3f2fd/1565c0?text=Leche+Algarra" },
+  { id: 36, nombre: "Yogurt Gloria", categoria: "lacteos", imagen: "https://placehold.co/300x300/e3f2fd/1565c0?text=Yogurt+Gloria" },
+  { id: 37, nombre: "Avena Algarra", categoria: "lacteos", imagen: "https://placehold.co/300x300/e3f2fd/1565c0?text=Avena+Algarra" },
+  { id: 38, nombre: "Crema de Leche", categoria: "lacteos", imagen: "https://placehold.co/300x300/e3f2fd/1565c0?text=Crema+Leche" },
+
+  { id: 39, nombre: "Jugos Nectar", categoria: "bebidas", imagen: "https://placehold.co/300x300/f1f8e9/558b2f?text=Jugos+Nectar" },
+
+  { id: 40, nombre: "Salchicha Manguera", categoria: "embutidos", imagen: "https://placehold.co/300x300/ffebee/c62828?text=Salchicha+Manguera" },
+  { id: 41, nombre: "Salchichon Suizer", categoria: "embutidos", imagen: "https://placehold.co/300x300/ffebee/c62828?text=Salchichon+Suizer" },
+
+  { id: 42, nombre: "Salsa Tomate", categoria: "salsas", imagen: "https://placehold.co/300x300/ffebee/c62828?text=Salsa+Tomate" },
+
+  { id: 43, nombre: "Detergente PQP", categoria: "aseo", imagen: "https://placehold.co/300x300/e0f7fa/006064?text=Detergente+PQP" },
+  { id: 44, nombre: "Detergente Ultrex", categoria: "aseo", imagen: "https://placehold.co/300x300/e0f7fa/006064?text=Detergente+Ultrex" },
+  { id: 45, nombre: "Jabon Ultrex", categoria: "aseo", imagen: "https://placehold.co/300x300/e0f7fa/006064?text=Jabon+Ultrex" },
+  { id: 46, nombre: "Suavizante Ultrex", categoria: "aseo", imagen: "https://placehold.co/300x300/e0f7fa/006064?text=Suavizante+Ultrex" },
+
+  { id: 47, nombre: "Matrix Oro Plata", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=Matrix" },
+  { id: 48, nombre: "Nutiva Botella", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=Nutiva+Botella" },
+  { id: 49, nombre: "Nutiva Caja", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=Nutiva+Caja" },
+  { id: 50, nombre: "Vinagre Angelical", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=Vinagre+Angelical" },
+  { id: 51, nombre: "Vinagre Sabana", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=Vinagre+Sabana" },
+  { id: 52, nombre: "La Arboleda", categoria: "otros", imagen: "https://placehold.co/300x300/f3e5f5/6a1b9a?text=La+Arboleda" },
+]

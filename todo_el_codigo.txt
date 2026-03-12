@@ -1,0 +1,272 @@
+import "./Header.css"
+
+function Header() {
+  return (
+    <header className="flex-row header-container ">
+      <nav className="header-nav">
+        <figure>Logos</figure>
+      </nav>
+      <div>
+        <section>Search Input</section>
+      </div>
+      <ul className="flex-row header_options-list">
+        <li>Options</li>
+        <li>Options</li>
+        <li>Options</li>
+        <li>Options</li>
+      </ul>
+    </header>
+  )
+}
+
+export default Header;
+.header-container {
+  margin: 8px;
+  justify-content: space-between;
+}
+
+
+.header_options-list {
+  list-style: none;  
+}
+import "./Footer.css"
+function Footer() {
+  return (
+    <footer className="Footer-section">
+      <p>
+        This is the footer
+      </p>
+    </footer>
+  )
+}
+
+export default Footer;
+.Footer-section {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+
+  width: 100vw;
+  position:fixed;
+  bottom: 0;
+}
+.FeaturedProducts_section {
+  justify-content: space-between;
+}
+import "./FeaturedProducts.css"
+function FeaturedProducts() {
+  return (
+    <>
+      <h2>Products Off</h2>
+      <section className="flex-row FeaturedProducts_section">
+        <article>
+          Stelar Products
+        </article>
+        <article>
+          Stelar Products
+        </article>
+        <article>
+          Stelar Products
+        </article>
+        <article>
+          Stelar Products
+        </article>
+      </section>
+    </>
+  )
+}
+
+export default FeaturedProducts;
+.Categories_Section {
+  flex-wrap: wrap;
+}
+import "./CategoriesSection.css"
+function CategoriesSection() {
+  return (
+    <>
+      <h2>Categories</h2>
+      <section className="flex-row Categories_Section">
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+        <div>
+          <h2>Categorie n#</h2>
+          <article>
+            <p>image</p>
+            <h3>eslogan</h3>
+          </article>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default CategoriesSection;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Brand */
+  --color-primary: #2563eb;     /* azul catálogo */
+  --color-secondary: #1d4ed8;   /* azul más profundo */
+  --color-accent: #f97316;      /* naranja para promos */
+
+  /* Backgrounds */
+  --color-bg: #f1f5ff;          /* azul claro de fondo */
+  --color-surface: #ffffff;     /* cards / bloques */
+  --color-border: #e0e7ff;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+import './App.css';
+import './styles/globals.css';
+import CategoriesSection from "./layouts/CategoriesSection/CategoriesSection"
+import FeaturedProducts from "./layouts/FeaturedProducts/FeaturedProducts"
+import Header from "./layouts/Header/Header"
+import Footer from './layouts/Footer/Footer'
+
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <FeaturedProducts />
+        <CategoriesSection />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export default App
+:root {
+  /* Brand */
+  --color-primary: #2563eb;     /* azul catálogo */
+  --color-secondary: #1d4ed8;   /* azul más profundo */
+  --color-accent: #f97316;      /* naranja para promos */
+
+  /* Backgrounds */
+  --color-bg: #f1f5ff;          /* azul claro de fondo */
+  --color-surface: #ffffff;     /* cards / bloques */
+  --color-border: #e0e7ff;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+}
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <App />
+)

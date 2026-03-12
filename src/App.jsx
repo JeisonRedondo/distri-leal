@@ -4,15 +4,16 @@ import CategoriesSection from "./layouts/CategoriesSection/CategoriesSection"
 import FeaturedProducts from "./layouts/FeaturedProducts/FeaturedProducts"
 import Header from "./layouts/Header/Header"
 import Footer from './layouts/Footer/Footer'
+import MainLayout from './layouts/MainLayout/MainLayout';
 
 function App() {
   return (
     <>
       <Header />
-      <main>
+      <MainLayout>
         <FeaturedProducts />
         <CategoriesSection />
-      </main>
+      </MainLayout>
       <Footer />
     </>
   )
