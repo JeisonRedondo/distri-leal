@@ -1,3 +1,22 @@
 .FeaturedProducts_section {
+  background: linear-gradient(135deg, #f8fafc, #f1f5ff);
   justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 10px;
+  padding: 16px 0;
+}
+
+.FeaturedProducts_section-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.FeaturedProducts_section-img:hover {
+  transform: scale(1.03);
 }

@@ -5,16 +5,16 @@ function FeaturedProducts() {
       <h2>Products Off</h2>
       <section className="flex-row FeaturedProducts_section">
         <article>
-          Stelar Products
+          <img className="FeaturedProducts_section-img" src="../../../public/stelar-products/stelar-exp.png" alt=""></img>
         </article>
         <article>
-          Stelar Products
+          <img className="FeaturedProducts_section-img" src="../../../public/stelar-products/stelar-exp.png" alt=""></img>
         </article>
         <article>
-          Stelar Products
+          <img className="FeaturedProducts_section-img" src="../../../public/stelar-products/stelar-exp.png" alt=""></img>
         </article>
         <article>
-          Stelar Products
+          <img className="FeaturedProducts_section-img" src="../../../public/stelar-products/stelar-exp.png" alt=""></img>
         </article>
       </section>
     </>
