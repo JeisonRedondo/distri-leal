@@ -1,16 +1,65 @@
-# React + Vite
+# Distri-Leal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Proyecto de portafolio - Sitio web para distribuidora ficticia de productos de consumo.
 
-Currently, two official plugins are available:
+## Acerca del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este es un proyecto de práctica y portafolio desarrollado con **React** y **Vite**. Simula el sitio web de una distribuidora de alimentos y productos de consumo, con catálogo de productos organizado por categorías.
 
-## React Compiler
+> **Nota**: Este es un proyecto ficticio/educativo. Los productos y datos mostrados son de ejemplo y no representan una empresa real.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React** 19
+- **Vite** 7
+- **CSS3** vanilla
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requisitos
+
+- Node.js 18+
+- npm o bun
+
+## Instalación
+
+```bash
+# Instalar dependencias
+npm install
+# o con bun
+bun install
+```
+
+## Scripts
+
+```bash
+npm run dev      # Servidor de desarrollo
+npm run build    # Build para producción
+npm run preview  # Previsualizar build
+npm run lint     # Linting
+```
+
+## Estructura
+
+```
+src/
+├── App.jsx
+├── main.jsx
+├── styles/globals.css
+├── layouts/
+│   ├── Header/
+│   ├── Footer/
+│   ├── MainLayout/
+│   ├── CategoriesSection/
+│   └── FeaturedProducts/
+└── data/products.js
+```
+
+## Características
+
+- Catálogo de productos con filtrado por categorías
+- Diseño responsive
+- UI clean con CSS vanilla
+- Componentes reutilizables
+
+## Licencia
+
+MIT

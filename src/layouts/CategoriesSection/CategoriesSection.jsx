@@ -18,14 +18,15 @@ function CategoriesSection() {
       {
         Object.keys(productsByCategories).map(categoria => {
           const productos = productsByCategories[categoria];
+          const upperCategories = categoria.charAt(0).toUpperCase() + categoria.slice(1)
 
           return (
             <>
-              <h2> {categoria}</h2>
+              <h2> {upperCategories}</h2>
               <div key={categoria} className="flex-row-wrap Categories_Section" >
                 {
                   productos.map(item => (
-                    <div >
+                    <div key={item.id} className="category-card">
                       <article>
                         <img src={item.imagen} alt={item.nombre} />
                         <p>{item.nombre}</p>

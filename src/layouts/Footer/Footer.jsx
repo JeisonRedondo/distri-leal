@@ -9,7 +9,7 @@ function Footer() {
         <a href="">Contact Us</a></div>
       <div className="footer-contact">
         <p>contacto@distrileal.com</p>
-        <p>Medellín, Colombia</p>
+        <p>Bogotá, Colombia</p>
       </div>
       <div className="footer-github"><a href="">GitHub <span>Jeison Redondo</span></a></div>
       <div className="footer-copyright">

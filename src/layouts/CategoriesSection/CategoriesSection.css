@@ -1,8 +1,43 @@
 .Categories_Section {
   flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
-.Categories_Section img{
-  width: 150px;
-  height: 150px;
+.Categories_Section h2 {
+  width: 100%;
+  color: var(--color-text);
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.category-card {
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-card p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
 }
