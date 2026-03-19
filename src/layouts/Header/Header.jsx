@@ -1,6 +1,8 @@
+
 import "./Header.css"
 
-function Header() {
+function Header({ searchedValue, setSearchedValue }) {
+
   return (
     <header className="flex-row header-container ">
       <nav className="header-nav">
@@ -8,7 +10,7 @@ function Header() {
       </nav>
       <div>
         <label htmlFor="">
-          <input className="header-search-input" type="" placeholder="Escriba su producto aqui" />
+          <input className="header-search-input" type="" placeholder="Escriba su producto aqui" value={searchedValue} onChange={e => setSearchedValue(e.target.value)} />
         </label>
       </div>
       <section className="flex-row header_options">

@@ -1,8 +1,13 @@
 import "./CategoriesSection.css"
 import { products } from "../../data/products.js";
-function CategoriesSection() {
+function CategoriesSection({ searchedValue }) {
 
-  const productsByCategories = products.reduce((categories, item) => {
+  //const productsByCategory = products.filter((article) => article.categoria === "snacks")
+
+
+  const productsToShow = searchedValue ? products.filter(item => item.nombre.toLowerCase().includes(searchedValue.toLowerCase())) : products;
+
+  const productsByCategories = productsToShow.reduce((categories, item) => {
 
     if (!(item.categoria in categories)) {
       categories[item.categoria] = []
@@ -12,16 +17,17 @@ function CategoriesSection() {
 
   }, {});
 
+
   return (
 
     <>
       {
         Object.keys(productsByCategories).map(categoria => {
           const productos = productsByCategories[categoria];
-          const upperCategories = categoria.charAt(0).toUpperCase() + categoria.slice(1)
+          const upperCategories = categoria?.charAt(0).toUpperCase() + categoria.slice(1)
 
           return (
-            <>
+            <section key={categoria}>
               <h2> {upperCategories}</h2>
               <div key={categoria} className="flex-row-wrap Categories_Section" >
                 {
@@ -35,7 +41,7 @@ function CategoriesSection() {
                   ))
                 }
               </div>
-            </>
+            </section>
           )
 
         })
