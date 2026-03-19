@@ -28,7 +28,8 @@ function CategoriesSection({ searchedValue }) {
 
           return (
             <section key={categoria}>
-              <h2> {upperCategories}</h2>
+              <h2 className="title-category"> {upperCategories}</h2>
+              <p className="title-accent"></p>
               <div key={categoria} className="flex-row-wrap Categories_Section" >
                 {
                   productos.map(item => (
