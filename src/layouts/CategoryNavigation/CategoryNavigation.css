@@ -1,0 +1,12 @@
+.category-navigation__list {
+  gap: 18px;
+  list-style: none;
+}
+
+.category-navigation__item {
+  text-decoration: none;
+}
+
+.category-navigation__link {
+  text-decoration: none;
+}

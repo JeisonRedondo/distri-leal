@@ -6,6 +6,7 @@ import Header from "./layouts/Header/Header"
 import Footer from './layouts/Footer/Footer'
 import MainLayout from './layouts/MainLayout/MainLayout';
 import { useState } from 'react';
+import CategoryNavigation from './layouts/CategoryNavigation/CategoryNavigation';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Header searchedValue={searchedValue} setSearchedValue={setSearchedValue} />
       <MainLayout>
         {/*<FeaturedProducts /> */}
+        <CategoryNavigation />
         <CategoriesSection searchedValue={searchedValue} />
       </MainLayout>
       <Footer />

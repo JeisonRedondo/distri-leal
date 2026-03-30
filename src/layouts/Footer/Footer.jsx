@@ -2,7 +2,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <footer className="Footer-section">
-      <div><img className="footer-logo-img" src="../../../public/distri-leal-logo.png" alt=""></img></div>
+      <div><img className="footer-logo-img" src="/distri-leal-logo.png" alt=""></img></div>
       <div className="footer-links">
         <a href="">Products</a>
         <a href="">About Us</a>
