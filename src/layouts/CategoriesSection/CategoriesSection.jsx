@@ -2,9 +2,6 @@ import "./CategoriesSection.css"
 import { products } from "../../data/products.js";
 function CategoriesSection({ searchedValue }) {
 
-  //const productsByCategory = products.filter((article) => article.categoria === "snacks")
-
-
   const productsToShow = searchedValue ? products.filter(item => item.nombre.toLowerCase().includes(searchedValue.toLowerCase())) : products;
 
   const productsByCategories = productsToShow.reduce((categories, item) => {
