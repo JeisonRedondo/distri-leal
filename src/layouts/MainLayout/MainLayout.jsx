@@ -1,10 +1,19 @@
 import "./MainLayout.css"
-function MainLayout({ children }) {
+import CategoryNavigation from "../CategoryNavigation/CategoryNavigation.jsx";
+import CategoriesSection from "../CategoriesSection/CategoriesSection.jsx";
+function MainLayout({ searchedValue }) {
   return (
     <main className="main-section">
-      {children}
+      {
+        <>
+          <CategoryNavigation />
+          <CategoriesSection searchedValue={searchedValue} />
+        </>
+
+      }
     </main>
   )
 }
+
 
 export default MainLayout;

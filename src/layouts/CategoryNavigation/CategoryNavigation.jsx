@@ -11,7 +11,6 @@ function CategoryNavigation() {
     return categories;
 
   }, [])
-  console.log("CategoryNavigation - categories :", categories)
   return (
     <>
 
@@ -19,7 +18,7 @@ function CategoryNavigation() {
         {
           categories.map((cat) => (
 
-            <li className="category-navigation__item">
+            <li className="category-navigation__item" key={cat}>
               <a className="category-navigation__link" href="">
                 {
                   cat.charAt(0).toUpperCase() + cat.slice(1)
