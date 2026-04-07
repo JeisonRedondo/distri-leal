@@ -1,5 +1,6 @@
 import "./CategoriesSection.css"
 import { products } from "../../data/products.js";
+import ProductView from "../ProductView/ProductView";
 function CategoriesSection({ searchedValue }) {
 
   const productsToShow = searchedValue ? products.filter(item => item.nombre.toLowerCase().includes(searchedValue.toLowerCase())) : products;
@@ -30,13 +31,7 @@ function CategoriesSection({ searchedValue }) {
               <div key={categoria} className="flex-row-wrap Categories_Section" >
                 {
                   productos.map(item => (
-                    <div key={item.id} className="category-card">
-                      <article>
-                        <img src={item.imagen} alt={item.nombre} />
-                        <p className="category-product_name">{item.nombre}</p>
-                        <p className="category-description">{item.descripcion}</p>
-                      </article>
-                    </div>
+                    <ProductView item={item} />
                   ))
                 }
               </div>
