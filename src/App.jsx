@@ -10,7 +10,6 @@ import Header from "./layouts/Header/Header"
 import Footer from './layouts/Footer/Footer'
 import MainLayout from './layouts/MainLayout/MainLayout';
 
-
 function App() {
 
   const [searchedValue, setSearchedValue] = useState("")
