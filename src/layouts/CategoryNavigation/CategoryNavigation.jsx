@@ -1,4 +1,5 @@
 import "./CategoryNavigation.css";
+
 import { products } from "../../data/products.js";
 
 function CategoryNavigation({ setSelectCategory }) {

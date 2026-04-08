@@ -13,3 +13,8 @@
   background-color: transparent;
   outline: none;
 }
+
+.category-navigation__link:focus{
+  border-radius: 4px;
+  border:1px solid var(--color-secondary);
+}
