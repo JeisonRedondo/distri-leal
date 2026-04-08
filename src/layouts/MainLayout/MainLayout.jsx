@@ -4,29 +4,43 @@ import { products } from "../../data/products.js";
 import ProductView from "../ProductView/ProductView";
 import CategoryNavigation from "../CategoryNavigation/CategoryNavigation.jsx";
 import CategoriesSection from "../CategoriesSection/CategoriesSection.jsx";
+import { useMemo, useState } from "react";
 function MainLayout({ searchedValue }) {
-  const productsToShow = searchedValue ? products.filter(item => item.nombre.toLowerCase().includes(searchedValue.toLowerCase())) : products;
 
-  const productsByCategories = productsToShow.reduce((categories, item) => {
+  const [selectCategory, setSelectCategory] = useState("")
 
-    if (!(item.categoria in categories)) {
-      categories[item.categoria] = []
+  const productsToBeDisplayed = useMemo(() => {
+    let productsFiltered = products;
+    if (searchedValue) {
+      productsFiltered = productsFiltered.filter(item => item.nombre.toLowerCase().includes(searchedValue.toLowerCase()))
     }
-    categories[item.categoria].push(item)
-    return categories
+    if (selectCategory) {
+      productsFiltered = productsFiltered.filter(item => item.categoria === selectCategory)
+    }
+    return productsFiltered.reduce((categories, item) => {
 
-  }, {});
+      if (!(item.categoria in categories)) {
+        categories[item.categoria] = []
+      }
+      categories[item.categoria].push(item)
+      return categories
+
+    }, {});
+
+
+  }, [searchedValue, selectCategory])
+
 
 
   return (
     <main className="main-section">
       {
         <>
-          <CategoryNavigation />
+          <CategoryNavigation setSelectCategory={setSelectCategory} />
           <CategoriesSection >
             {
-              Object.keys(productsByCategories).map(categoria => {
-                const productos = productsByCategories[categoria];
+              Object.keys(productsToBeDisplayed).map(categoria => {
+                const productos = productsToBeDisplayed[categoria];
                 const upperCategories = categoria?.charAt(0).toUpperCase() + categoria.slice(1)
 
                 return (
@@ -36,7 +50,7 @@ function MainLayout({ searchedValue }) {
                     <div key={categoria} className="flex-row-wrap Categories_Section" >
                       {
                         productos.map(item => (
-                          <ProductView item={item} />
+                          <ProductView item={item} key={item.id} />
                         ))
                       }
                     </div>
