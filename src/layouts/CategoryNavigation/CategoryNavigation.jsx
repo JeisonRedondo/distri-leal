@@ -16,11 +16,16 @@ function CategoryNavigation({ setSelectCategory }) {
     <>
 
       <ul className="category-navigation__list flex-row">
+        <li className="category-navigation__item" key="All"  >
+          <button className="category-navigation__link" onClick={() => setSelectCategory("")}>
+            All
+          </button>
+        </li>
         {
           categories.map((cat) => (
 
-            <li className="category-navigation__item" key={cat} onClick={() => setSelectCategory(cat)} >
-              <button className="category-navigation__link" >
+            <li className="category-navigation__item" key={cat}  >
+              <button className="category-navigation__link" onClick={() => setSelectCategory(cat)}>
                 {
                   cat.charAt(0).toUpperCase() + cat.slice(1)
                 }
