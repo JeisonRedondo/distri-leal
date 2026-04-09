@@ -18,9 +18,9 @@
 
 .Categories_Section {
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 12px;
   margin-bottom: 40px;
-  align-items: stretch;
+  justify-content: space-evenly;
 }
 
 
@@ -60,4 +60,14 @@
   display: -webkit-box;
   text-wrap: balance;
   overflow-wrap: normal;
+}
+
+@media (max-width: 760px){
+
+  .Categories_Section {
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+  }
 }

@@ -1,6 +1,7 @@
 .category-navigation__list {
   gap: 18px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .category-navigation__item {

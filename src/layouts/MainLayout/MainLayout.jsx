@@ -47,7 +47,7 @@ function MainLayout({ searchedValue }) {
                   <section key={categoria}>
                     <h2 className="title-category"> {upperCategories}</h2>
                     <p className="title-accent"></p>
-                    <div key={categoria} className="flex-row-wrap Categories_Section" >
+                    <div key={categoria} className="flex-row Categories_Section" >
                       {
                         productos.map(item => (
                           <ProductView item={item} key={item.id} />
