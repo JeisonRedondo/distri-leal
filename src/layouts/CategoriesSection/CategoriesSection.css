@@ -68,6 +68,29 @@
     flex-wrap: nowrap;
     gap: 12px;
     margin-bottom: 40px;
-    justify-content: space-evenly;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding-bottom: 8px;
   }
+
+  .Categories_Section::-webkit-scrollbar {
+    height: 4px;
+    margin-top: 8px;
+  }
+
+  .Categories_Section::-webkit-scrollbar-track {
+    background: var(--color-border);
+    border-radius:2px;
+    margin: 0 10vw;
+  
+  }
+
+  .Categories_Section::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 2px;
+  }
+  .category-card {
+    min-width:200px;
+  }
+
 }
