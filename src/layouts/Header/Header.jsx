@@ -27,9 +27,9 @@ function Header({ searchedValue, setSearchedValue }) {
       </div>
       <button type="button" className="header-button-opt" onClick={() => setVisible(!visible)}>☰</button>
       <section className={`${isVisible} `}>
-        <a className="header_options-opts" href="/brands">Allied Companies</a>
-        <a className="header_options-opts" href="/about">About Us</a>
-        <a className="header_options-opts" href="/contactus">Contact Us</a>
+        <Link to="/brands" className="header_options-opts">Allied Companies</Link>
+        <Link to="/about" className="header_options-opts">About Us</Link>
+        <Link to="/contactus" className="header_options-opts">Contact Us</Link>
       </section>
     </header>
   )
